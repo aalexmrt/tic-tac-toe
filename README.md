@@ -4,6 +4,8 @@ This project is a simple implementation of the classic tic-tac-toe game built us
 
 ## Demo
 
+![Demo](docs/gifs/tic-tac-toe-demo.gif)
+
 ## Installation
 
 Follow these steps to set up the project locally:
