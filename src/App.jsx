@@ -6,7 +6,7 @@ import { checkWinnerFrom, checkEndGame } from './logic/board'
 import { WinnerModal } from './components/winnerModal'
 import { BoardGame } from './components/BoardGame'
 import { Turns } from './components/Turns'
-import { SaveGameToStorage, resetGameStorage } from './logic/storage'
+import { saveGameToStorage, resetGameStorage } from './logic/storage'
 function App() {
   const [board, setBoard] = useState(() => {
     const boardFromStorage = window.localStorage.getItem('board')
@@ -44,7 +44,7 @@ function App() {
 
     // save game
     console.log('saving game')
-    SaveGameToStorage({ board: newBoard, turn: newTurn })
+    saveGameToStorage({ board: newBoard, turn: newTurn })
     // check if there's a winner
     const newWinner = checkWinnerFrom(newBoard)
     if (newWinner) {
