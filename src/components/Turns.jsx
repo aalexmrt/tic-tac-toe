@@ -1,5 +1,5 @@
-import { Square } from './Square'
-import { TURNS } from '../constants'
+import { Square } from 'src/components/Square'
+import { TURNS } from 'src/constants'
 
 export function Turns(turn) {
   return (

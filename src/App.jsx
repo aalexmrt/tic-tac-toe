@@ -1,12 +1,12 @@
 import { useState } from 'react'
-import './App.css'
+import 'src/App.css'
 import confetti from 'canvas-confetti'
-import { TURNS } from './constants'
-import { checkWinnerFrom, checkEndGame } from './logic/board'
-import { WinnerModal } from './components/winnerModal'
-import { BoardGame } from './components/BoardGame'
-import { Turns } from './components/Turns'
-import { saveGameToStorage, resetGameStorage } from './logic/storage'
+import { TURNS } from 'src/constants'
+import { checkWinnerFrom, checkEndGame } from 'src/logic/board'
+import { WinnerModal } from 'src/components/winnerModal'
+import { BoardGame } from 'src/components/BoardGame'
+import { Turns } from 'src/components/Turns'
+import { saveGameToStorage, resetGameStorage } from 'src/logic/storage'
 function App() {
   const [board, setBoard] = useState(() => {
     const boardFromStorage = window.localStorage.getItem('board')

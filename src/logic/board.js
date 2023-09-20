@@ -1,4 +1,4 @@
-import { WINNER_COMBOS } from '../constants'
+import { WINNER_COMBOS } from 'src/constants'
 
 export const checkWinnerFrom = (boardToCheck) => {
   // check if there's a winner

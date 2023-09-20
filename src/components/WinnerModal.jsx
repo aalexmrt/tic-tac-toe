@@ -1,4 +1,4 @@
-import { Square } from './Square'
+import { Square } from 'src/components/Square'
 
 export function WinnerModal({ winner, resetGame }) {
   if (winner === null) return null
