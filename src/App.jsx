@@ -4,7 +4,7 @@ import confetti from 'canvas-confetti'
 import { TURNS } from 'src/constants'
 import { checkWinnerFrom, checkEndGame } from 'src/logic/board'
 import { BoardGame } from 'src/components/BoardGame'
-import { WinnerModal } from 'src/components/winnerModal'
+import { WinnerModal } from 'src/components/WinnerModal'
 import { Turns } from 'src/components/Turns'
 import { saveGameToStorage, resetGameStorage } from 'src/logic/storage'
 function App() {
